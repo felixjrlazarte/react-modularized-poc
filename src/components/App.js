@@ -18,7 +18,7 @@ const routes = [
   { displayText: "dashboard", value: "" },
   { displayText: "transactions", value: "transactions" },
   { displayText: "invoices", value: "invoices" },
-  { displayText: "bills-pay", value: "bills-pay" },
+  { displayText: "billsPay", value: "bills-pay" },
 ];
 
 const useStyles = makeStyles((theme) => ({

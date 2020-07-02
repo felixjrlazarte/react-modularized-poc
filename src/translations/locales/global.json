@@ -5,7 +5,7 @@
       "dashboard": "Dashboard",
       "transactions": "Transactions",
       "invoices": "Invoices",
-      "bills-pay": "Bills Pay"
+      "billsPay": "Bills Pay"
     }
   }
 }

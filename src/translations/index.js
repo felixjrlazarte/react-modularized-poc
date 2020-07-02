@@ -2,12 +2,22 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import en from "./locales/en.json";
+import global from "./locales";
+import dashboard from '../scenes/Dashboard/locales';
+import transactions from '../scenes/Transactions/locales';
+import invoices from '../scenes/Invoices/locales';
+import billsPay from '../scenes/BillsPay/locales';
 
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
-  en: { translation: en }
+  en: { translation: {
+    ...global,
+    ...dashboard,
+    ...transactions,
+    ...invoices,
+    ...billsPay,
+  }}
 };
 
 i18n

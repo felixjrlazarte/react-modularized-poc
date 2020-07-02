@@ -1,15 +1,17 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
+
 import Typography from '@material-ui/core/Typography';
 
-const Invoices = () => {
+const Invoices = ({ t }) => {
 
   return (
     <div>
       <Typography variant="h6" noWrap>
-        Welcome to Invoices
+        {t("invoices.title")}
       </Typography>
     </div>
   );
 }
 
-export default Invoices;
+export default withTranslation()(Invoices);
