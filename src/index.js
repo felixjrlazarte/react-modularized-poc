@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+import { I18nextProvider } from "react-i18next";
+
+import configureStore from './store';
+import i18n from "./translations";
+
+import './styles/index.css';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+const store = configureStore();
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <I18nextProvider i18n={i18n}>
+      <App />
+    </I18nextProvider>
+  </Provider>,
   document.getElementById('root')
 );
 
