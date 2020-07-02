@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { I18nextProvider } from "react-i18next";
 
 import configureStore from './store';
-import i18n from "./translations";
+import i18n from "./i18n";
 
 import './styles/index.css';
 import App from './components/App';
