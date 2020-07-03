@@ -1,0 +1,11 @@
+{
+  "title": "PayMaya Manager 2.0",
+  "sidebar": {
+    "title": {
+      "dashboard": "Dashboard",
+      "transactions": "Transactions",
+      "invoices": "Invoices",
+      "billsPay": "Bills Pay"
+    }
+  }
+}

@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from "react-router-dom";
 import { I18nextProvider } from 'react-i18next';
 
-import configureStore from './store';
-import i18n from "./i18n";
+import configureStore from 'store';
+import i18n from "i18n";
 
-import './styles/index.css';
-import App from './components/App';
-import * as serviceWorker from './serviceWorker';
+import 'styles/index.css';
+import App from 'components/App';
+import * as serviceWorker from 'serviceWorker';
 
 const store = configureStore();
 
