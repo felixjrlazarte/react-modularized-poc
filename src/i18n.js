@@ -2,11 +2,11 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import global from "locales";
-import dashboard from 'scenes/Dashboard/locales';
-import transactions from 'scenes/Transactions/locales';
-import invoices from 'scenes/Invoices/locales';
-import billsPay from 'scenes/BillsPay/locales';
+import global from "locales/en-US";
+import dashboard from 'scenes/Dashboard/locales/en-US';
+import transactions from 'scenes/Transactions/locales/en-US';
+import invoices from 'scenes/Invoices/locales/en-US';
+import billsPay_en_US from 'scenes/BillsPay/locales/en-US';
 
 // the translations
 const resources = {
@@ -15,7 +15,7 @@ const resources = {
     ...dashboard,
     ...transactions,
     ...invoices,
-    ...billsPay,
+    ...billsPay_en_US,
   }}
 };
 
